@@ -24,7 +24,6 @@
   },
   "scripts": {
     "start": "bundle exec rails server",
-    "install": "bundle install && npm install",
     "update": "npm-check -u"
   },
   "dependencies": {
