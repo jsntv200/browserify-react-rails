@@ -1,7 +1,7 @@
-import { Component, PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 import Text from './text';
 
-export default class HelloWorld extends Component {
+class HelloWorld extends Component {
   static propTypes = {
     name: PropTypes.string.isRequired,
   };
@@ -10,7 +10,7 @@ export default class HelloWorld extends Component {
     super(props);
 
     this.state = {
-      name: this.props.name
+      name: this.props.name,
     };
 
     this.changeName = this.changeName.bind(this);
@@ -18,16 +18,18 @@ export default class HelloWorld extends Component {
 
   changeName() {
     this.setState({
-      name: `${this.state.name} !!!!`
+      name: `${this.state.name} !!!!`,
     });
   }
 
   render() {
     return (
-      <div onClick={ this.changeName }>
-        <p>Hello { this.state.name }</p>
+      <div onClick={this.changeName}>
+        <p>Hello {this.state.name}</p>
         <Text title="It's a HelloWorld" />
       </div>
     );
   }
 }
+
+export default HelloWorld;

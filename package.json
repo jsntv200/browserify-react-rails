@@ -5,19 +5,22 @@
   "author": "Jason Taylor",
   "email": "jason@redant.com.au",
   "browserify": {
-     "transform": [
-       ["babelify", {
-         "presets": [
-           "es2015",
-           "stage-0",
-           "react"
-         ],
-         "plugins": [
-           "syntax-async-functions",
-           "transform-regenerator"
-         ]
-       }]
-     ]
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "stage-0",
+            "react"
+          ],
+          "plugins": [
+            "syntax-async-functions",
+            "transform-regenerator"
+          ]
+        }
+      ]
+    ]
   },
   "dependencies": {
     "babel-plugin-syntax-async-functions": "^6.8.0",
@@ -34,5 +37,13 @@
     "jquery": "^3.0.0",
     "jquery-ujs": "^1.2.1",
     "react": "^15.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.1.0",
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.9.2",
+    "eslint-plugin-jsx-a11y": "^1.5.3",
+    "eslint-plugin-react": "^5.2.2"
   }
 }
