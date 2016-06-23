@@ -22,5 +22,9 @@ module BrowserifyReactRails
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # Browserify config for compiling javascript
+    # https://gist.github.com/oelmekki/c78cfc8ed1bba0da8cee
+    config.browserify_rails.commandline_options = "-t [ babelify --presets [ es2015 react stage-0 ] --plugins [ syntax-async-functions transform-regenerator ] ]"
   end
 end

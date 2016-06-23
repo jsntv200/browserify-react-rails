@@ -15,3 +15,7 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Frontend requirements to ignore
+node_modules
+browserify-cache.json
