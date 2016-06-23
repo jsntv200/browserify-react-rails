@@ -19,3 +19,4 @@
 # Frontend requirements to ignore
 node_modules
 browserify-cache.json
+npm-debug.log
